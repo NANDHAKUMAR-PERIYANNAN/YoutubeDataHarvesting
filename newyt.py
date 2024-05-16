@@ -35,9 +35,9 @@ import streamlit as st
 
 # Database connection details
 
-db_host = 'root.c7446cyau6gt.ap-south-1.rds.amazonaws.com:3306'
-db_user = 'admin'
-db_password = 'rootroot'
+db_host = '***********'
+db_user = '******'
+db_password = '*****'
 db_name = 'yb'
 
 # Connection URL with specifying the database
@@ -131,9 +131,9 @@ print("MySQL tables created successfully.")
 #AIzaSyB-N2yYOOfUQ2eINK7me8qxUhyAKZOHoTA ==primary 
 #AIzaSyAOgHxUwehLsXti03T2LRaRiwUSXLGMfhY ==second
 #AIzaSyD8OCgIYr7KE0PUswAhasOmEKO3csh9EYs ==other1
-#AIzaSyAxkaJZ7aEN4I8un50EBKpzDkFcdirCPEY ==other2
+#AIzaSyBcJUYRqCl9k6h6fJht6-Vg1eEjkG3eAus ==other2
 
-api_key = "AIzaSyDRn1XcZI6tS-wnXjEQEuL5dSMQVQIGEp0"  # Replace with your YouTube API key 
+api_key = "AIzaSyB-N2yYOOfUQ2eINK7me8qxUhyAKZOHoTA"  # Replace with your YouTube API key 
 # Build the YouTube service
 youtube = build('youtube', 'v3', developerKey=api_key)
 
@@ -318,9 +318,9 @@ if st.button("Push Data to Database"):
 # Streamlit Part
 
 # Database connection details
-db_host = 'root.c7446cyau6gt.ap-south-1.rds.amazonaws.com:3306'
-db_user = 'admin'
-db_password = 'rootroot'
+db_host = '***********'
+db_user = '******'
+db_password = '*****'
 db_name = 'yb'
 
 
@@ -430,7 +430,7 @@ if selected_query:
                             vi.Video_Title, ch.Channel_Name
                         ORDER BY 
                             Comment_Count DESC
-                        LIMIT 1;''')
+                        LIMIT 10;''')
         column_names = ["Video_Title","Channel_Name","Comment_Count"]
 
     # Execute the query
